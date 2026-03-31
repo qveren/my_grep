@@ -21,7 +21,7 @@ This project is a minimal implementation of basic `grep` functionality using sta
 ## Usage
 
 ```bash
-./program pattern [file]
+./my_grep pattern [file]
 ```
 
 ### Arguments
@@ -38,19 +38,19 @@ If no file is provided, the program reads from standard input.
 ### Search in a file
 
 ```bash
-./program hello file.txt
+./my_grep hello file.txt
 ```
 
 ### Using stdin
 
 ```bash
-cat file.txt | ./program hello
+cat file.txt | ./my_grep hello
 ```
 
 ### Manual input
 
 ```bash
-./program hello
+./my_grep hello
 ```
 
 Then type text manually and press `Ctrl+D` to finish input.
@@ -74,7 +74,7 @@ The program follows this algorithm:
 Compile using GCC:
 
 ```bash
-gcc -o program main.c
+gcc -o my_grep my_grep.c
 ```
 
 ---
@@ -103,7 +103,7 @@ gcc -o program main.c
 
 ```bash
 .
-├── main.c
+├── my_grep.c
 └── README.md
 ```
 
